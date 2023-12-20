@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;exception.CondomNotFoundException&apos; to &apos;ProductNotFoundException&apos;&#x0D;&#x0A;- Original project: &apos;exceptionhandling&apos;&#x0D;&#x0A;- Original element: &apos;exception.CondomNotFoundException&apos;&#x0D;&#x0A;- Renamed element: &apos;exception.ProductNotFoundException&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;CondomNotFoundException&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;exception{CondomNotFoundException.java[CondomNotFoundException" matchStrategy="1" name="ProductNotFoundException" qualified="false" references="true" similarDeclarations="false" stamp="1689753332234" textual="false" version="1.0"/>
+</session>

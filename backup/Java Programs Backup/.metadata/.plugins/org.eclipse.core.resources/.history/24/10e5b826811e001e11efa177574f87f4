@@ -1,0 +1,19 @@
+package main;
+
+import java.util.Scanner;
+
+import controller.Controller;
+
+public class MedicalShop {
+
+	public static void main(String[] args)  {
+//			System.out.println("Please Enter Your name");
+//			
+//			Scanner sc = new Scanner(System.in);
+//			
+//			String name = sc.nextLine();
+			Controller controller = new Controller();
+			controller.findUser("sahil");
+	}
+
+}

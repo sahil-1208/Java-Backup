@@ -1,0 +1,22 @@
+package p3;
+
+public class Userform {
+
+	public static void main(String[] args) {
+		PersonalInfo  pf = new PersonalInfo();
+		System.out.println(pf.name);
+		
+	}
+}
+class PersonalInfo{
+	String name;
+	int age;
+	String gender;
+	Adress address;
+}
+class Adress{
+	String state;
+	String city;
+	String pincode;
+	
+}

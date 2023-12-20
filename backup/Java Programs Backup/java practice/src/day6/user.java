@@ -1,0 +1,19 @@
+package day6;
+
+public class user {
+  public static void main(String[] args) {
+	
+	  String str1="Sahil";
+	  String str2="rajpal";
+	   System.out.println(10+str1+str2+10*10);
+//	   implicit typecasting
+	   int a=100;
+	   int b=20;
+	   float f= a;
+	    a=b;
+	     System.out.println(a);
+	     System.out.println(b);
+	     System.out.println(f);
+	  
+}
+}

@@ -1,0 +1,16 @@
+package hashmap;
+
+import java.util.HashMap;
+
+public class HashmapExample {
+
+	public static void main(String[] args) {
+
+	}
+	
+	public void charFrequency(String str) {
+		HashMap <Character,Integer> hasmap =new HashMap<Character,Integer>();
+		 
+	}
+
+}

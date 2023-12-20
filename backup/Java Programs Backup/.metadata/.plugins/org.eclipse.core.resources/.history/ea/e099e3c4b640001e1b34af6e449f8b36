@@ -1,0 +1,96 @@
+package com.learning.repository;
+
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Objects;
+import java.util.Optional;
+import java.util.stream.Stream;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.learning.model.Movie;
+import com.learning.repository.Repository;
+
+public class ServiceImpl implements Service {
+	
+	@Autowired
+	private Repository repository;
+
+	private List<Movie> listOfMovies = new LinkedList();
+	
+	@Override
+	public void addMovie(Movie movie) {
+		listOfMovies.add(movie);
+	}
+
+	@Override
+	public Movie findMovieById(int id) {
+		Stream<Movie> streamOfMovies = listOfMovies.stream();
+		streamOfMovies = streamOfMovies.filter(movie -> movie.getId() == id);
+		Optional<Movie> optionalStream = streamOfMovies.findFirst();
+		boolean movieIsAvailable = optionalStream.isPresent();
+		if (movieIsAvailable) {
+			Movie movie = optionalStream.get();
+			return movie;
+		}
+		return null;
+	}
+
+	@Override
+	public Movie findMovieByName(String name) {
+		Stream<Movie> streamOfMovies = listOfMovies.stream();
+		streamOfMovies = streamOfMovies.filter(movie -> movie.getName().equals(name));
+		Optional<Movie> optionalStream = streamOfMovies.findFirst();
+		boolean movieIsAvailable = optionalStream.isPresent();
+		if (movieIsAvailable) {
+			Movie movie = optionalStream.get();
+			return movie;
+		}
+		return null;
+	}
+
+	@Override
+	public Movie findMovieByActorName(String actorName) {
+		Stream<Movie> streamOfMovies = listOfMovies.stream();
+		streamOfMovies = streamOfMovies.filter(movie -> movie.getMovieCast().getActor().equals(actorName));
+		Optional<Movie> optionalStream = streamOfMovies.findFirst();
+		boolean movieIsAvailable = optionalStream.isPresent();
+		if (movieIsAvailable) {
+			 Movie movie = optionalStream.get();
+			return movie;
+		}
+
+		return null;
+	}
+
+	@Override
+	public boolean removeMovieById(int id) {
+		Movie movie = findMovieById(id);
+		if (Objects.nonNull(movie)) {
+			listOfMovies.remove(movie);
+			return true;
+		}
+		return false;
+	}
+
+	@Override
+	public boolean removeMovieByName(Movie movie) {
+		if (Objects.nonNull(movie)) {
+			listOfMovies.remove(movie);
+			return true;
+		}
+		return false;
+	}
+
+	@Override
+	public boolean updateMovie(int id, Movie movie) {
+		listOfMovies.set( id , movie);
+		return false;
+	}
+
+	@Override
+	public List<Movie> findAllMovies() {
+		return null;
+	}
+
+}

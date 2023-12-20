@@ -1,0 +1,74 @@
+package com.movie.service;
+
+import com.movie.model.Movie;
+import com.movie.repository.MovieRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Optional;
+
+@Service
+public class MovieServiceImpl implements MovieService {
+    @Autowired
+    private MovieRepository movieRepository;
+    private List<Movie> listOfMovies = new LinkedList();
+
+    public MovieServiceImpl() {
+    }
+
+    public void addMovie(Movie movie) {
+        this.movieRepository.save(movie);
+    }
+
+    public Movie findMovieById(Long id) {
+        Optional<Movie> optionalMovie = this.movieRepository.findById(id);
+        boolean isPresent = optionalMovie.isPresent();
+        if (isPresent) {
+            Movie movie = (Movie)optionalMovie.get();
+            return movie;
+        } else {
+            return null;
+        }
+    }
+
+    public List<Movie> findMovieByName(String movieName) {
+        List<Movie> movieList = this.movieRepository.findMovieByName(movieName);
+        return movieList;
+    }
+
+    /*public List<Movie> findMovieByActorName(String actorName) {
+        List<Movie> movieListByActor = this.movieRepository.findMovieByActorName(actorName);
+        return movieListByActor;
+    }*/
+
+    public Boolean removeMovie(Long id) {
+        this.movieRepository.deleteById(id);
+        return true;
+    }
+
+    public Boolean removeMovieByName(String movieName) {
+        this.movieRepository.removeMovieByName(movieName);
+        return true;
+    }
+
+    public Boolean updateMovie(Long id, Movie movie) {
+        Movie storedMovie = this.findMovieById(id);
+        if (storedMovie != null) {
+            storedMovie.setMovieName(movie.getMovieName());
+            storedMovie.setLength(movie.getLength());
+            storedMovie.setLanguage(movie.getLanguage());
+            storedMovie.setGenre(movie.getGenre());
+            storedMovie.setMovieCast(movie.getMovieCast());
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public List<Movie> findAllMovies() {
+        List<Movie> allMoviesList = this.movieRepository.findAll();
+        return allMoviesList;
+    }
+}

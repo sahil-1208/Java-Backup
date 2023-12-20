@@ -1,0 +1,23 @@
+package com.learning.service;
+
+import com.learning.datasource.HdfcDataSource;
+import com.learning.model.Account;
+
+public class ReuseMethods {
+	private HdfcDataSource hdfcDataSource;
+
+	public double bankService(Account account, double amount) {
+		Account[] accountArray = hdfcDataSource.listOfAccounts();
+		for (int index = 0; index < accountArray.length; index++) {
+			Account storedAccount = accountArray[index];
+			boolean numberValidation = storedAccount.getNumber() == account.getNumber();
+			boolean passwordValidation = storedAccount.getPassword() == account.getPassword();
+			if (numberValidation && passwordValidation) {
+				double storedBalance = storedAccount.getBalance();
+				return storedBalance;
+			}
+			
+	}
+		return 0;
+}
+}

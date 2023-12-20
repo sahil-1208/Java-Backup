@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="D:\Intelij-Projects\movie-streaming-services"/>
+			<item value="C:\Users\LENOVO\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\web-service"/>
+			<item value="C:\Users\LENOVO\Downloads\1\users-service"/>
+			<item value="D:\user-service-boot"/>
+			<item value="C:\Users\LENOVO\Downloads\order-service (1)"/>
+			<item value="C:\Users\LENOVO\Downloads\order-servcice"/>
+			<item value="C:\Users\LENOVO\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\order-service"/>
+			<item value="C:\Users\LENOVO\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\product-service"/>
+			<item value="C:\Users\LENOVO\Downloads\order-service"/>
+			<item value="C:\Users\LENOVO\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\atm-service-boot"/>
+			<item value="C:\Users\LENOVO\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\atm-service-boot-aditi"/>
+			<item value="C:\Users\LENOVO\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\atm-bank-boot"/>
+			<item value="C:\Users\LENOVO\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\atm-Services-boot"/>
+			<item value="C:\Users\LENOVO\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\java-squad\src"/>
+			<item value="C:\Users\LENOVO\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\new\atm-service-boot"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\LENOVO\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\atm-service"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item key="width" value="480"/>
+		<item key="height" value="665"/>
+		<item key="x" value="720"/>
+		<item key="y" value="67"/>
+	</section>
+</section>

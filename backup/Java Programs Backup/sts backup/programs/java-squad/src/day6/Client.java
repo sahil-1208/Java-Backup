@@ -1,0 +1,26 @@
+package day6;
+public class Client {
+	double sachin =13000.00;           //instance variable
+	 static double prabh = 10000.00;   // static variable
+	
+	public static void main(String[] args) {
+		 //data
+		double vansh = 2000.00;    //local variable
+		double sahil = 3000.00;
+		double aditi = 6000.00;
+
+		System.out.println(aditi);
+		System.out.println(sahil);
+		System.out.println(vansh);
+		System.out.println(prabh);    //static call
+		Client clientRef= new Client();
+		Piggybank piggybankRef= new Piggybank();
+		System.out.println(clientRef.sachin);
+		System.out.println(Piggybank.yuvraj);
+		System.out.println(piggybankRef.sakshi);
+	}
+}
+class Piggybank{
+	double sakshi=4000.00;
+	static double yuvraj=5000.00;
+}

@@ -1,0 +1,14 @@
+package com.learning.repository;
+
+
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.learning.model.Movie;
+
+public interface Repository {
+	Movie findMovieByName(String name);
+	Movie findMovieByActorName(String actorName);
+	boolean removeMovieByName(Movie movie);
+
+}

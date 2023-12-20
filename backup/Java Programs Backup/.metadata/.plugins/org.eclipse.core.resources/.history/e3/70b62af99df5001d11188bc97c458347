@@ -1,0 +1,14 @@
+package com.learning.entity;
+
+import java.time.LocalDate;
+
+import com.learning.OrderStatus;
+
+public class OrderEntity {
+	 private Long id;
+	 private String name;
+	 private LocalDate orderDate;
+	 private OrderStatus orderStatus;
+	 private Double price;
+	 
+}

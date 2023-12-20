@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;movieStreamApi&apos; to &apos;Java8-movieStreamApi&apos;&#x0D;&#x0A;- Original element: &apos;movieStreamApi&apos;&#x0D;&#x0A;- Renamed element: &apos;movieStreamApi&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;movieStreamApi&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=movieStreamApi" name="Java8-movieStreamApi" references="true" stamp="1691128518450" version="1.0"/>
+</session>

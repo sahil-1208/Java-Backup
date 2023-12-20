@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="collections/src"/>
+	<classpathentry kind="src" path="consturtors/src"/>
+	<classpathentry kind="src" path="inner-classes/src"/>
+	<classpathentry kind="src" path="Java 8/src"/>
+	<classpathentry kind="src" path="java practice/src"/>
+	<classpathentry kind="src" path="java-squad/src"/>
+	<classpathentry kind="src" path="Method/src"/>
+	<classpathentry kind="src" path="NestedClass/src"/>
+	<classpathentry kind="src" path="oops/src"/>
+	<classpathentry kind="src" path="self-practice/src"/>
+	<classpathentry kind="src" path="string/src"/>
+	<classpathentry kind="src" path="ThisAndSuper-keyword/src"/>
+	<classpathentry kind="output" path="Java 8/bin"/>
+</classpath>

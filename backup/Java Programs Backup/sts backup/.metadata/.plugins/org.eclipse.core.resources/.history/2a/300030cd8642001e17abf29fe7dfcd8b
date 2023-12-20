@@ -1,0 +1,19 @@
+package com.movie.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+
+import com.movie.enums.Status;
+import com.movie.model.Movie;
+
+
+public interface MovieRepository extends JpaRepository<Movie, Long> {
+	
+	List<Movie> findMovieByName(String movieName);
+
+	List<Movie> findMovieByActorName(String actorName);
+
+	Status removeMovieByName(String movieName);
+}

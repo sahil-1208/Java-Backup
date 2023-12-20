@@ -1,0 +1,59 @@
+package com.learning.entity;
+
+import java.time.LocalDate;
+
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+import com.learning.OrderStatus;
+
+@Entity
+
+public class OrderEntity {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	 private Long id;
+	 private String name;
+	 private LocalDate orderDate;
+	 
+	 @Enumerated(EnumType.STRING)
+	 private OrderStatus orderStatus;
+	 private Double price;
+	 
+	 
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public LocalDate getOrderDate() {
+		return orderDate;
+	}
+	public void setOrderDate(LocalDate orderDate) {
+		this.orderDate = orderDate;
+	}
+	public OrderStatus getOrderStatus() {
+		return orderStatus;
+	}
+	public void setOrderStatus(OrderStatus orderStatus) {
+		this.orderStatus = orderStatus;
+	}
+	public Double getPrice() {
+		return price;
+	}
+	public void setPrice(Double price) {
+		this.price = price;
+	}
+	 
+}
